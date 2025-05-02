@@ -144,3 +144,37 @@ export const LatestJobsByPopular = [
       "We are looking for a senior UI/UX designer. A good suitable professional person for this very important role. Anyone can apply for this...",
   },
 ];
+
+// top Career advice
+export const careerAdvice = [
+  {
+    id: 1,
+    image: "/image/advice/image-01.png",
+    style: "bg-pink-primary",
+    title: "11 Awesome Free Career Self Assessments",
+    tag: "Assessment",
+    authImage: "/image/author.png",
+    author: "David Miller",
+    date: "March 15, 2023",
+  },
+  {
+    id: 2,
+    image: "/image/advice/image-02.png",
+    style: "bg-blue-primary",
+    title: "How to Start Looking for a UI/UX Design Job in 2023",
+    tag: "Jobs",
+    authImage: "/image/author.png",
+    author: "David Miller",
+    date: "August 05, 2024",
+  },
+  {
+    id: 3,
+    image: "/image/advice/image-03.png",
+    style: "bg-green-primary",
+    title: "100 Top Interview Questions - Be Prepared",
+    tag: "Interview",
+    authImage: "/image/author.png",
+    author: "David Miller",
+    date: "April 21, 2024",
+  },
+];
