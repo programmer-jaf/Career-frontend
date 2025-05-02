@@ -78,24 +78,24 @@ export const Counter = [
   {
     id: 1,
     count: 500,
-    peragraph: "Messages from recruiters",
+    paragraph: "Messages from recruiters",
     suffix: "K",
   },
   {
     id: 2,
     count: 40,
-    peragraph: "Job opportunities",
+    paragraph: "Job opportunities",
     suffix: "K",
   },
   {
     id: 3,
     count: 17,
-    peragraph: "Offers made",
+    paragraph: "Offers made",
   },
   {
     id: 4,
     count: 97,
-    peragraph: "Hire Success Rate",
+    paragraph: "Hire Success Rate",
     suffix: "%",
   },
 ];
