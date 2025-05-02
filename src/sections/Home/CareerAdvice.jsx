@@ -35,7 +35,7 @@ const CareerAdvice = () => {
             {/* Content */}
             <div className="p-5 flex flex-col justify-between h-full">
               {/* Category */}
-              <span className="bg-[#F3F3F3] text-black-primary text-xs font-semibold px-3 py-1 rounded-sm w-fit">
+              <span className="bg-light-yellow text-black-primary text-xs font-semibold px-3 py-1 rounded-sm w-fit">
                 {item.tag}
               </span>
 
@@ -66,6 +66,13 @@ const CareerAdvice = () => {
             </div>
           </div>
         ))}
+      </div>
+      {/* add button for mobile view */}
+      <div className="flex md:hidden items-center justify-center mt-8">
+        <CustomButton
+          title={"Browse Advice"}
+          style="bg-orange-primary px-8 py-3 rounded-lg text-black-primary text-base font-semibold w-full"
+        />
       </div>
     </div>
   );

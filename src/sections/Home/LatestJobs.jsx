@@ -53,7 +53,7 @@ const LatestJobs = () => {
                     Part-time
                   </span>
                 ) : (
-                  <span className="bg-gray-800 text-white text-xs px-3 py-1 rounded-full">
+                  <span className="bg-light-yellow text-black-primary text-xs px-3 py-1 rounded-sm font-medium">
                     Full-time
                   </span>
                 )}

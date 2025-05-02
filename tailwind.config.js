@@ -35,6 +35,7 @@ export default {
         "grey-primary": "#574F4A",
         light: "#F5F3EA",
         "light-grey": "#E5E5EC",
+        "light-yellow": "#fffbd6",
       },
     },
   },
