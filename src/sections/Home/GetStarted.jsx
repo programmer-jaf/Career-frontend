@@ -53,7 +53,7 @@ const GetStarted = () => {
       <div
         key={index}
         className={`w-full px-4 ${
-          index !== Counter.length - 1 ? "md:border-r md:border-grey-primary" : ""
+          index !== Counter.length - 1 ? "md:border-r-2 md:border-black-primary" : ""
         }`}
       >
         <h4 className="text-h3 font-bold text-black-primary">
