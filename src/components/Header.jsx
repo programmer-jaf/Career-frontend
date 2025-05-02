@@ -1,20 +1,22 @@
-import React from 'react'
-import {Link} from "react-router-dom";
-import DesktopNav from "./DesktopNav.jsx";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import DesktopNav from './DesktopNav.jsx';
 
 const Header = () => {
   return (
-      <header className="flex items-center justify-between px-5 py-8 container mx-auto"
-      >
-      {/*  logo*/}
-        <Link to={"/"} className="flex items-center gap-1">
-          <img src="./Logo.png" alt="Logo" />
-          <h2 className="text-h4 font-bold">Career.</h2>
+    <header className="w-full">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/Logo.png" alt="Logo" className="h-8 w-auto" />
+          <h2 className="text-h4 font-bold text-black">Career.</h2>
         </Link>
-      {/*  Desktop Nav*/}
-        <DesktopNav/>
-      {/*  */}
-      </header>
-  )
-}
-export default Header
+
+        {/* Desktop Navigation */}
+        <DesktopNav />
+      </div>
+    </header>
+  );
+};
+
+export default Header;
