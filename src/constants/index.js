@@ -100,7 +100,7 @@ export const Counter = [
   },
 ];
 
-const LatestJobsByPopular = [
+export const LatestJobsByPopular = [
   {
     id: 1,
     image: "/image/companies/slack.svg",
@@ -144,5 +144,3 @@ const LatestJobsByPopular = [
       "We are looking for a senior UI/UX designer. A good suitable professional person for this very important role. Anyone can apply for this...",
   },
 ];
-
-export default LatestJobsByPopular;
