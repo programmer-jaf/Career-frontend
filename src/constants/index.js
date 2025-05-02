@@ -117,8 +117,8 @@ export const LatestJobsByPopular = [
   },
   {
     id: 2,
-    image: "/image/companies/figma.svg",
-    title: "Front-end Developer",
+    image: "/image/companies/facebook.svg",
+    title: "Expert React Developer",
     description:
       "We are looking for a front end developer. A good suitable professional person for this very important role. Anyone can apply for this...",
   },
