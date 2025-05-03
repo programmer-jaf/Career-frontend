@@ -180,23 +180,83 @@ export const careerAdvice = [
 ];
 
 // export newComunitiesCount
-export const newComunitiesCount  = [
+export const newComunitiesCount = [
   {
-    id:1,
-    title:"40",
-    prefix:"K",
-    description: "Job opportunities"
+    id: 1,
+    title: "40",
+    prefix: "K",
+    description: "Job opportunities",
   },
   {
-    id:1,
-    title:"17",
-    prefix:"K",
-    description: "Offers made"
+    id: 1,
+    title: "17",
+    prefix: "K",
+    description: "Offers made",
   },
   {
-    id:1,
-    title:"97",
-    prefix:"%",
-    description: "Hiring success rate"
+    id: 1,
+    title: "97",
+    prefix: "%",
+    description: "Hiring success rate",
   },
-]
+];
+
+// export meetTeam
+export const meetTeamData = [
+  {
+    id: 1,
+    image: "/image/teams/team-member-01.png",
+    name: "Sarah Taylor",
+    position: "Co-Founder",
+    style: "bg-orange-primary"
+  },
+  {
+    id: 2,
+    image: "/image/teams/team-member-02.png",
+    name: "David Miller",
+    position: "CEO",
+    style: "bg-pink-primary"
+  },
+  {
+    id: 3,
+    image: "/image/teams/team-member-03.png",
+    name: "Marlon Samuels",
+    position: "Founder",
+    style: "bg-yellow-primary"
+  },
+  {
+    id: 4,
+    image: "/image/teams/team-member-04.png",
+    name: "David Warner",
+    position: "Marketing Adviser",
+    style: "bg-blue-primary"
+  },
+  {
+    id: 5,
+    image: "/image/teams/team-member-05.png",
+    name: "Chris Woakes",
+    position: "Marketing Chief ",
+    style: "bg-green-primary"
+  },
+  {
+    id: 6,
+    image: "/image/teams/team-member-06.png",
+    name: "James Anderson",
+    position: "Head of Design",
+    style: "bg-orange-primary"
+  },
+  {
+    id: 7,
+    image: "/image/teams/team-member-07.png",
+    name: "Valentina Rose",
+    position: "Design Assistant",
+    style: "bg-pink-primary"
+  },
+  {
+    id: 8,
+    image: "/image/teams/team-member-08.png",
+    name: "Steven Smith",
+    position: "Developer",
+    style: "bg-yellow-primary"
+  },
+];
