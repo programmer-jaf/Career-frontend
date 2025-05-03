@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero Container - Matches NewCommunity */}
-      <div className="container max-w-7xl mx-auto px-4 md:px-0 my-14 md:my-20">
+      <div className="container max-w-7xl mx-auto px-4 md:px-8 my-14 md:my-20">
         {/* Heading Section */}
         <div className="flex flex-col items-center text-center">
           <h1 className="text-3xl md:text-h2 font-bold md:max-w-4xl relative">
@@ -43,8 +43,8 @@ const HeroSection = () => {
               Our Mission is to empower every tech professional
             </h2>
             <p className="text-p3 text-grey-primary leading-relaxed">
-              Career's mission is to revolutionize the job search process for tech
-              professionals by empowering them to discover their ideal job
+              Career's mission is to revolutionize the job search process for
+              tech professionals by empowering them to discover their ideal job
               opportunity quickly and effortlessly. We provide a platform that
               streamlines and expedites the job search, offering comprehensive
               resources, tailored recommendations, and advanced search
