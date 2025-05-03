@@ -178,3 +178,25 @@ export const careerAdvice = [
     date: "April 21, 2024",
   },
 ];
+
+// export newComunitiesCount
+export const newComunitiesCount  = [
+  {
+    id:1,
+    title:"40",
+    prefix:"K",
+    description: "Job opportunities"
+  },
+  {
+    id:1,
+    title:"17",
+    prefix:"K",
+    description: "Offers made"
+  },
+  {
+    id:1,
+    title:"97",
+    prefix:"%",
+    description: "Hiring success rate"
+  },
+]

@@ -36,7 +36,7 @@ export default {
         light: "#F5F3EA",
         "light-grey": "#E5E5EC",
         "light-yellow": "#fffbd6",
-      },
+      }
     },
   },
   plugins: [],
