@@ -26,8 +26,8 @@ const HeroSection = () => {
         {/* Image and Text Content */}
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 gap-16">
           {/* Image Block */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <div className="bg-pink-primary p-8 rounded-2xl overflow-hidden w-full max-w-md">
+          <div className="w-full md:w-1/2 flex justify-start">
+            <div className="bg-pink-primary p-8 rounded-2xl w-full max-w-md ">
               <img
                 src="/image/about.svg"
                 alt="About us"
