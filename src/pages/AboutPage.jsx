@@ -3,6 +3,7 @@ import HeroSection from "../sections/About/HeroSection";
 import NewCommunity from "../sections/About/NewCommunity";
 import VideoSection from "../sections/About/VideoSection";
 import MeetTeam from "../sections/About/MeetTeam";
+import FeaturesSection from "../sections/About/FeaturesSection";
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
       <NewCommunity />
       <VideoSection />
       <MeetTeam/>
+      <FeaturesSection/>
     </div>
   );
 };

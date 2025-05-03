@@ -208,55 +208,77 @@ export const meetTeamData = [
     image: "/image/teams/team-member-01.png",
     name: "Sarah Taylor",
     position: "Co-Founder",
-    style: "bg-orange-primary"
+    style: "bg-orange-primary",
   },
   {
     id: 2,
     image: "/image/teams/team-member-02.png",
     name: "David Miller",
     position: "CEO",
-    style: "bg-pink-primary"
+    style: "bg-pink-primary",
   },
   {
     id: 3,
     image: "/image/teams/team-member-03.png",
     name: "Marlon Samuels",
     position: "Founder",
-    style: "bg-yellow-primary"
+    style: "bg-yellow-primary",
   },
   {
     id: 4,
     image: "/image/teams/team-member-04.png",
     name: "David Warner",
     position: "Marketing Adviser",
-    style: "bg-blue-primary"
+    style: "bg-blue-primary",
   },
   {
     id: 5,
     image: "/image/teams/team-member-05.png",
     name: "Chris Woakes",
     position: "Marketing Chief ",
-    style: "bg-green-primary"
+    style: "bg-green-primary",
   },
   {
     id: 6,
     image: "/image/teams/team-member-06.png",
     name: "James Anderson",
     position: "Head of Design",
-    style: "bg-orange-primary"
+    style: "bg-orange-primary",
   },
   {
     id: 7,
     image: "/image/teams/team-member-07.png",
     name: "Valentina Rose",
     position: "Design Assistant",
-    style: "bg-pink-primary"
+    style: "bg-pink-primary",
   },
   {
     id: 8,
     image: "/image/teams/team-member-08.png",
     name: "Steven Smith",
     position: "Developer",
-    style: "bg-yellow-primary"
+    style: "bg-yellow-primary",
+  },
+];
+
+// aboutFeatures
+export const aboutFeatures = [
+  {
+    id: 1,
+    title: "Support",
+    description:
+      "Browse our support hub for information about best practices and answers.",
+  },
+  {
+    id: 2,
+    title: "Blog",
+    description:
+      "Power up with knowledge, tips, and think-pieces about modern jobs.",
+  },
+  {
+    id: 3,
+    title: "Community",
+    description:
+      "Meet like-minded talents, ask your questions, and introduce your business.",
   },
 ];
