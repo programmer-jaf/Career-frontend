@@ -4,7 +4,7 @@ import { newComunitiesCount } from "../constants/index.js";
 
 const CommunityCounter = () => {
   return (
-    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
       {newComunitiesCount.map((item, index) => (
         <div
           key={index}
