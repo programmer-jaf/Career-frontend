@@ -6,7 +6,7 @@ import DreamCompanies from "../sections/Home/PopularCompanies";
 import LatestJobs from "../sections/Home/LatestJobs";
 import PopularQuote from "../sections/Home/PopularQuote";
 import CareerAdvice from "../sections/Home/CareerAdvice";
-import Subscription from "../sections/Home/Subscription";
+import Subscription from "../components/Subscription";
 
 const HomePage = () => {
   return (
