@@ -13,7 +13,11 @@ const FilterSection = ({ title, children, defaultOpen = true }) => {
         onClick={() => setOpen(!open)}
       >
         <h3 className="text-base font-semibold">{title}</h3>
-        {open ? <FaChevronUp className="text-sm" /> : <FaChevronDown className="text-sm" />}
+        {open ? (
+          <FaChevronUp className="text-sm" />
+        ) : (
+          <FaChevronDown className="text-sm" />
+        )}
       </div>
       {open && <div className="space-y-2">{children}</div>}
       <hr className="my-4" />
@@ -167,7 +171,10 @@ const FilterDrawer = ({ isOpen, onClose }) => {
                       placeholder="Write salary"
                       value={filters.customSalary}
                       onChange={(e) =>
-                        setFilters((prev) => ({ ...prev, customSalary: e.target.value }))
+                        setFilters((prev) => ({
+                          ...prev,
+                          customSalary: e.target.value,
+                        }))
                       }
                     />
                   )}
@@ -177,7 +184,10 @@ const FilterDrawer = ({ isOpen, onClose }) => {
               {/* Job Location */}
               <FilterSection title="Job Location">
                 {["Any Where", "United States", "Custom"].map((loc) => (
-                  <label key={loc} className="flex items-center gap-2 text-sm mb-2">
+                  <label
+                    key={loc}
+                    className="flex items-center gap-2 text-sm mb-2"
+                  >
                     <input
                       type="checkbox"
                       checked={filters.jobLocation === loc}

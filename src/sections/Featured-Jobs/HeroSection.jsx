@@ -9,17 +9,20 @@ const HeroSection = () => {
   return (
     <div className="relative">
       {/* Reusable Filter Drawer */}
-      <FilterDrawer isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)} />
+      <FilterDrawer
+        isOpen={isFilterOpen}
+        onClose={() => setIsFilterOpen(false)}
+      />
 
       {/* Main Hero Content */}
-      <div className="container max-w-7xl mx-auto px-4 py-16">
+      <div className="container max-w-7xl mx-auto px-4 md:py-8">
         <div className="flex items-center justify-center flex-col text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-h1 font-bold max-w-3xl leading-tight">
             Find the world’s best exciting jobs
           </h1>
           <p className="text-sm sm:text-base mt-4 max-w-2xl text-grey-primary">
-            The best place to discover & apply to the coolest startup jobs.
-            More than 672,800 current vacancies from 17,750 sites available to you.
+            The best place to discover & apply to the coolest startup jobs. More
+            than 672,800 current vacancies from 17,750 sites available to you.
           </p>
 
           {/* Search and Filter */}

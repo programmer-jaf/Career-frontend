@@ -453,3 +453,49 @@ export const LatestBlog = [
   }
 ];
 
+
+// latest Jobs
+export const LatestJobsByPopular1 = [
+  {
+    id: 1,
+    image: "/image/companies/behance.svg",
+    title: "Visual Experience Strategist",
+    description:
+      "Join Behance as a Visual Experience Strategist to craft immersive digital journeys. We're seeking creatives who think beyond pixels and build impactful design narratives.",
+  },
+  {
+    id: 2,
+    image: "/image/companies/dribble.svg",
+    title: "Junior JavaScript Engineer",
+    description:
+      "Dribbble is hiring a junior developer with strong JavaScript fundamentals. Ideal candidates are eager to learn, collaborate, and contribute to beautiful UI-driven apps.",
+  },
+  {
+    id: 3,
+    image: "/image/companies/messenger.svg",
+    title: "Chat Platform Integrations Developer",
+    description:
+      "Meta Messenger is looking for a developer to work on custom integrations and chat automation features. This role is perfect for problem solvers who enjoy messaging tech.",
+  },
+  {
+    id: 4,
+    image: "/image/companies/spotify.svg",
+    title: "Audio Data Engineer",
+    description:
+      "Spotify seeks an engineer to manage large-scale audio data pipelines. Candidates with a love for music and strong data processing skills are highly encouraged to apply.",
+  },
+  {
+    id: 5,
+    title: "Interaction Designer",
+    image: "/image/companies/zoom.svg",
+    description:
+      "Zoom is searching for a talented Interaction Designer to shape meaningful user flows in video conferencing experiences. Strong UX instincts are a must.",
+  },
+  {
+    id: 6,
+    title: "Cloud Infrastructure Specialist",
+    image: "/image/companies/microsoft.svg",
+    description:
+      "Microsoft is looking for a cloud specialist to build and manage scalable infrastructure solutions across Azure. Applicants should have DevOps experience and cloud-first thinking.",
+  },
+];
