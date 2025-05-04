@@ -1,88 +1,8 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// TODO: move to constants file
-const footerGridData1 = [
-  {
-    id: 1,
-    title: "Partner Overview",
-  },
-  {
-    id: 1,
-    title: "Job Board API",
-  },
-  {
-    id: 1,
-    title: "Email Alert Program",
-  },
-  {
-    id: 1,
-    title: "Job Board Software",
-  },
-];
+import { footerGridData1, footerGridData2, footerGridData3, footerGridData4 } from "../constants";
 
-// TODO: move to constants file
-const footerGridData2 = [
-  {
-    id: 1,
-    title: "About us",
-  },
-  {
-    id: 1,
-    title: "Why Career",
-  },
-  {
-    id: 1,
-    title: "Testimonials",
-  },
-  {
-    id: 1,
-    title: "Promotions",
-  },
-  {
-    id: 1,
-    title: "Blog",
-  },
-  {
-    id: 1,
-    title: "Podcasts",
-  },
-  {
-    id: 1,
-    title: "Forum",
-  },
-];
-
-// TODO: move to constants file
-const footerGridData3 = [
-  {
-    id: 1,
-    title: "Design Industry",
-  },
-  {
-    id: 1,
-    title: "Development Industry",
-  },
-  {
-    id: 1,
-    title: "Marketing Industry",
-  },
-  {
-    id: 1,
-    title: "Other Industry",
-  },
-];
-// TODO: move to constants file
-const footerGridData4 = [
-  {
-    id: 1,
-    title: "Contact us",
-  },
-  {
-    id: 1,
-    title: "My account",
-  },
-];
 
 const Footer = () => {
   return (

@@ -25,7 +25,7 @@ const UploadCVSection = () => {
 
       {/* Upload Section */}
       <div className="flex-1 w-full bg-white rounded-lg shadow-md p-6">
-        <p className="text-p2 font-semibold mb-4 text-center md:text-left">
+        <p className="text-p2 font-semibold mb-4 md:text-left">
           Add files or drop files here
         </p>
 

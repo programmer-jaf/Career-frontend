@@ -282,3 +282,84 @@ export const aboutFeatures = [
       "Meet like-minded talents, ask your questions, and introduce your business.",
   },
 ];
+
+
+// footer 
+export const footerGridData1 = [
+  {
+    id: 1,
+    title: "Partner Overview",
+  },
+  {
+    id: 2,
+    title: "Job Board API",
+  },
+  {
+    id: 3,
+    title: "Email Alert Program",
+  },
+  {
+    id: 4,
+    title: "Job Board Software",
+  },
+];
+
+export const footerGridData2 = [
+  {
+    id: 1,
+    title: "About us",
+  },
+  {
+    id: 2,
+    title: "Why Career",
+  },
+  {
+    id: 3,
+    title: "Testimonials",
+  },
+  {
+    id: 4,
+    title: "Promotions",
+  },
+  {
+    id: 5,
+    title: "Blog",
+  },
+  {
+    id: 7,
+    title: "Podcasts",
+  },
+  {
+    id: 8,
+    title: "Forum",
+  },
+];
+
+export const footerGridData3 = [
+  {
+    id: 1,
+    title: "Design Industry",
+  },
+  {
+    id: 2,
+    title: "Development Industry",
+  },
+  {
+    id: 3,
+    title: "Marketing Industry",
+  },
+  {
+    id: 4,
+    title: "Other Industry",
+  },
+];
+export const footerGridData4 = [
+  {
+    id: 1,
+    title: "Contact us",
+  },
+  {
+    id: 2,
+    title: "My account",
+  },
+];
