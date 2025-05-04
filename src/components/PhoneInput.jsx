@@ -20,7 +20,7 @@ const PhoneNumberInput = () => {
           id: 'phone',
         }}
         containerClass="w-full mt-1"
-        inputClass="!w-full !border !border-gray-300 !rounded-r-md !outline-none !py-2 !pl-14 !pr-3"
+        inputClass="!w-full !border !border-gray-300 !rounded-r-md !outline-none !py-5 !pl-14 !pr-3"
         buttonClass="!border !border-r-0 !border-gray-300 !bg-white !rounded-l-md"
         dropdownClass="!border !border-gray-300 !shadow-md"
       />
