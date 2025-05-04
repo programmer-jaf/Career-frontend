@@ -20,7 +20,7 @@ const CVHighLightSection = () => {
             Don’t have any resume? Make your resume now
           </h4>
           <div className="flex flex-col md:flex-row items-center justify-center md:gap-6 gap-4 mt-6 ">
-            <Link to={"/"} className="w-full md:w-fit">
+            <Link to={"/create-cv"} className="w-full md:w-fit">
               <CustomButton
                 title={"Make my CV"}
                 style={

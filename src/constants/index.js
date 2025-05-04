@@ -1,5 +1,9 @@
 export const links = [
   {
+    path:"/create-cv",
+    name: "Create CV",
+  },
+  {
     path: "/contact",
     name: "Contact",
   },
