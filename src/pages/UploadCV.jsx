@@ -1,10 +1,11 @@
 import React from 'react'
+import UploadCVSection from '../sections/UploadCV/UploadCVSection'
 
 const UploadCV = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <UploadCVSection/>
+    </>
   )
 }
 
