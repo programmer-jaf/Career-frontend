@@ -62,7 +62,7 @@ const SignIn = () => {
             <div className="flex flex-col w-full">
               <CustomButton
                 style="bg-orange-primary text-white rounded-md p-2 mt-1 hover:bg-orange-500 transition duration-200 hover:cursor-pointer font-semibold"
-                title={"sign up"}
+                title={"sign In"}
               />
             </div>
           </div>
