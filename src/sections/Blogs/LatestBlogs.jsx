@@ -14,7 +14,7 @@ const LatestBlogs = () => {
         {LatestBlog.map((blog) => (
           <div
             key={blog.id}
-            className="bg-white rounded-lg overflow-hidden p-4 shadow-md"
+            className="bg-white rounded-lg overflow-hidden p-4"
           >
             <img
               src={blog.image}

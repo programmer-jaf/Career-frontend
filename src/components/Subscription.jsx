@@ -4,7 +4,7 @@ import CustomButton from "./CustomButton";
 const Subscription = () => {
   return (
     <div className="container max-w-7xl mx-auto flex flex-col items-center justify-center p-4 md:py-20">
-      <div className="relative flex flex-col items-center justify-center md:h-[16rem] w-full bg-orange-primary rounded-3xl p-6">
+      <div className="relative flex flex-col items-center justify-center md:h-[16rem] w-full bg-orange-primary rounded-lg md:rounded-3xl p-6">
         {/* assets */}
         <div className="absolute top-5 left-5">
           <img
