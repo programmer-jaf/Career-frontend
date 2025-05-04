@@ -2,8 +2,8 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto flex flex-col items-center justify-center max-w-7xl px-4 py-16">
-      <h1 className="text-4xl md:text-h2 font-bold text-center text-black-primary max-w-[32rem] mb-4">
+    <div className="container mx-auto flex flex-col items-center justify-center max-w-7xl px-4 my-8 md:my-16">
+      <h1 className="text-4xl md:text-h1 font-bold text-center text-black-primary max-w-[43rem] mb-4">
         Top Career Advice, News & articles
       </h1>
       <p className="text-base md:text-p1 text-grey-primary text-center max-w-[28rem] mb-8 ">

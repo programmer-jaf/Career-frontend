@@ -1,6 +1,6 @@
 export const links = [
   {
-    path:"/create-cv",
+    path: "/create-cv",
     name: "Create CV",
   },
   {
@@ -287,8 +287,7 @@ export const aboutFeatures = [
   },
 ];
 
-
-// footer 
+// footer
 export const footerGridData1 = [
   {
     id: 1,
@@ -365,5 +364,33 @@ export const footerGridData4 = [
   {
     id: 2,
     title: "My account",
+  },
+];
+
+// export popularBlogsData
+export const popularBlogsData = [
+  {
+    id: 1,
+    title: "How to Start Looking for a UI/UX Design Job in 2023",
+    tag: "Assessment",
+    authImage: "/image/author.png",
+    date: "January 27, 2023",
+    author:"David Miller",
+  },
+  {
+    id: 2,
+    title: "How to Start Looking for a UI/UX Design Job in 2023",
+    tag: "Assessment",
+    authImage: "/image/author.png",
+    date: "January 27, 2023",
+    author:"David Miller",
+  },
+  {
+    id: 3,
+    title: "How to Start Looking for a UI/UX Design Job in 2023",
+    tag: "Assessment",
+    authImage: "/image/author.png",
+    date: "January 27, 2023",
+    author:"David Miller",
   },
 ];
