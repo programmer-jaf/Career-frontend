@@ -16,6 +16,7 @@ import UploadCV from "../pages/UploadCV.jsx";
 import CreateCV from "../pages/CreateCV.jsx";
 import AllJobs from "../pages/AllJobs.jsx";
 import PostJob from "../pages/PostJob.jsx";
+import PageNotFound from "../pages/PageNotFound.jsx";
 
 const PublicRoutes = [
   // General
@@ -87,6 +88,11 @@ const PublicRoutes = [
     path: "/create-cv",
     element: <CreateCV/>
   },
+  // page not found
+  {
+    path: "*",
+    element: <PageNotFound/>
+  }
 ];
 
 export default PublicRoutes;

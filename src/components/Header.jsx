@@ -5,7 +5,7 @@ import DesktopNav from './DesktopNav.jsx';
 const Header = () => {
   return (
     <header className="w-full">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src="/Logo.png" alt="Logo" className="h-8 w-auto" />
