@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DesktopNav from './DesktopNav.jsx';
+import MobileMenu from './MobileNavigation.jsx';
 
 const Header = () => {
   return (
@@ -14,6 +15,8 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <DesktopNav />
+        {/* mobile Navigation */}
+        <MobileMenu/>
       </div>
     </header>
   );
