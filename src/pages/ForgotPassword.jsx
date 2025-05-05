@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className="container max-w-7xl md:py-18 py-12 flex items-center justify-center bg-[#f4f1e9] px-4">
+    <div className="container max-w-7xl mx-auto md:py-18 py-12 flex items-center justify-center bg-[#f4f1e9] px-4">
       <div className="w-full max-w-md bg-white rounded-lg p-8 shadow-md">
         <h2 className="text-2xl font-semibold text-black mb-2">
           Reset Password
@@ -38,12 +39,12 @@ const ForgotPassword = () => {
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 rounded-md transition"
-          >
-            Send
-          </button>
+            <button
+              type="submit"
+              className="w-full bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 rounded-md transition"
+            >
+              Send
+            </button>
         </form>
       </div>
     </div>
