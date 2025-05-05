@@ -3,13 +3,7 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 
 const PostJob = () => {
   return (
-    <div className="container mx-auto max-w-7xl px-4 py-8">
-      <div className="flex items-center justify-center flex-col gap-3">
-        <h1 className="text-4xl font-semibold">Post your job</h1>
-        <p className="text-lg text-gray-500">
-          Post a job to find the right talent for your company
-        </p>
-      </div>
+    <div className="container mx-auto max-w-7xl px-4">
       <JobPostForm />
     </div>
   );
