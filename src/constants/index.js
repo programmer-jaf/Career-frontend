@@ -399,7 +399,7 @@ export const popularBlogsData = [
 export const LatestBlog = [
   {
     id: 1,
-    image:"/public/image/blogs/blog-image-01.png",
+    image:"/image/blogs/blog-image-01.png",
     title: "10 Essential Skills for Modern Web Developers",
     tag: "Web Development",
     authImage: "/image/author.png",
@@ -408,7 +408,7 @@ export const LatestBlog = [
   },
   {
     id: 2,
-    image:"/public/image/blogs/blog-image-02.png",
+    image:"/image/blogs/blog-image-02.png",
     title: "How to Build Scalable Mobile Apps in 2025",
     tag: "App Development",
     authImage: "/image/author.png",
@@ -417,7 +417,7 @@ export const LatestBlog = [
   },
   {
     id: 3,
-    image:"/public/image/blogs/blog-image-03.png",
+    image:"/image/blogs/blog-image-03.png",
     title: "UI/UX Design Trends You Need to Know in 2023",
     tag: "UI/UX",
     authImage: "/image/author.png",
@@ -426,7 +426,7 @@ export const LatestBlog = [
   },
   {
     id: 4,
-    image:"/public/image/blogs/blog-image-04.png",
+    image:"/image/blogs/blog-image-04.png",
     title: "Mastering Digital Marketing for Startups",
     tag: "Marketing",
     authImage: "/image/author.png",
@@ -435,7 +435,7 @@ export const LatestBlog = [
   },
   {
     id: 5,
-    image:"/public/image/blogs/blog-image-05.png",
+    image:"/image/blogs/blog-image-05.png",
     title: "The Ultimate Guide to SEO in 2023",
     tag: "SEO",
     authImage: "/image/author.png",
@@ -444,7 +444,7 @@ export const LatestBlog = [
   },
   {
     id: 6,
-    image:"/public/image/blogs/blog-image-06.png",
+    image:"/image/blogs/blog-image-06.png",
     title: "DevOps Best Practices for Faster Deployment",
     tag: "DevOps",
     authImage: "/image/author.png",

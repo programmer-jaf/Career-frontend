@@ -103,6 +103,32 @@ const SignUp = () => {
               />
             </div>
           </div>
+          {/* select role  */}
+
+          {/* select role */}
+          <div className="flex flex-col md:flex-row gap-4 mt-4">
+            <div className="flex flex-col w-full">
+              <label
+                htmlFor="role"
+                className="text-sm text-black-primary font-semibold"
+              >
+                Select Role
+              </label>
+              <select
+                id="role"
+                name="role"
+                className="border outline-none rounded-md p-2 mt-1"
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Select your role
+                </option>
+                <option value="job-seeker">Job Seeker</option>
+                <option value="recruiter">Recruiter</option>
+              </select>
+            </div>
+          </div>
+
           {/* button */}
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="flex flex-col w-full">
