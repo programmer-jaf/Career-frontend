@@ -22,77 +22,81 @@ const PublicRoutes = [
   // General
   {
     path: "/",
-    element: <Home/>
+    element: <Home />,
   },
   {
     path: "/about",
-    element: <About/>
+    element: <About />,
   },
   {
     path: "/contact",
-    element: <Contact/>
+    element: <Contact />,
   },
 
   // Blog
   {
     path: "/blogs",
-    element: <BlogPage/>
+    element: <BlogPage />,
   },
   {
     path: "/blog-post",
-    element: <BlogPost/>
+    element: <BlogPost />,
   },
 
   // Jobs
   {
     path: "/jobs",
-    element: <AllJobs/>
-  },
-  {
-    path: "/post-job",
-    element: <PostJob/>
+    element: <AllJobs />,
   },
   {
     path: "/job/:id",
-    element: <JobDescription/>
+    element: <JobDescription />,
+  },
+  {
+    path: "/post-job",
+    element: <PostJob />,
+  },
+  {
+    path: "/job/:id",
+    element: <JobDescription />,
   },
   {
     path: "/featured-jobs",
-    element: <FeaturedJobs/>
+    element: <FeaturedJobs />,
   },
 
   // Auth
   {
     path: "/sign-in",
-    element: <SignIn/>
+    element: <SignIn />,
   },
   {
     path: "/sign-up",
-    element: <SignUp/>
+    element: <SignUp />,
   },
   {
     path: "/forgot-password",
-    element: <ForgotPassword/>
+    element: <ForgotPassword />,
   },
   {
     path: "/reset-password",
-    element: <ResetPassword/>
+    element: <ResetPassword />,
   },
 
   // CV Tools
   {
     path: "/upload-cv",
-    element: <UploadCV/>
+    element: <UploadCV />,
   },
   {
     path: "/create-cv",
-    element: <CreateCV/>
+    element: <CreateCV />,
   },
   // page not found
   {
     path: "*",
-    element: <PageNotFound/>
-  }
+    element: <PageNotFound />,
+  },
 ];
 
 export default PublicRoutes;

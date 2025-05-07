@@ -40,9 +40,12 @@ const LatestJobs = () => {
                     {job.title}
                   </h4>
                 </div>
-                <button className="hidden sm:block border-2 border-black-primary hover:border-orange-primary px-8 text-gray-500 py-2 rounded-lg hover:bg-orange-primary hover:text-white transition duration-300">
-                  Apply
-                </button>
+
+                <Link to={`/job/${job.id}`}>
+                  <button className="hidden sm:block border-2 border-black-primary hover:border-orange-primary px-8 text-gray-500 py-2 rounded-lg hover:bg-orange-primary hover:text-white transition duration-300">
+                    Apply
+                  </button>
+                </Link>
               </div>
 
               <p className="text-sm text-gray-600 mb-4">{job.description}</p>
@@ -75,9 +78,11 @@ const LatestJobs = () => {
               <div className="h-0.5 my-5 w-[95%] bg-gray-200"></div>
 
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <button className="block sm:hidden border-2 border-gray-500 text-gray-500 py-2 px-4 rounded-lg hover:bg-orange-primary hover:text-white transition duration-300 w-full">
-                  Apply
-                </button>
+                <Link to={`/job/${job.id}`} className="block sm:hidden w-full">
+                  <button className="border-2 border-gray-500 text-gray-500 py-2 px-4 rounded-lg hover:bg-orange-primary hover:text-white transition duration-300 w-full">
+                    Apply
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

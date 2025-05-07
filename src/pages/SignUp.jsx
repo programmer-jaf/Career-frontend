@@ -1,25 +1,73 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import CustomButton from "../components/CustomButton";
+import axiosInstance from "../api/axiosInstance.js";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    role: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+      await axiosInstance.post("/auth/signup", {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+        role: formData.role,
+      });
+
+      // Optional: Disable email input here after signup
+      // setFormData(prev => ({ ...prev, emailDisabled: true }));
+
+      navigate("/sign-in");
+    } catch (err) {
+      alert(err.response?.data?.message || "Signup failed");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <div className="container max-w-7xl mx-auto px-4 py-8">
         <form
-          action=""
-          method="post"
+          onSubmit={handleSubmit}
           className="bg-white rounded-xl px-8 pt-6 pb-8 my-4 md:my-8 max-w-[36rem] mx-auto"
         >
-          <h3 className="text-3xl font-semibold my-3 text-center ">Sign Up</h3>
+          <h3 className="text-3xl font-semibold my-3 text-center">Sign Up</h3>
           <p className="text-p2 text-grey-primary mb-6 max-w-[22rem] text-center mx-auto">
             Find jobs, events and communities that celebrate your background.
           </p>
+
           {/* first and last name */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col w-full">
               <label
-                htmlFor="name"
+                htmlFor="firstName"
                 className="text-sm text-black-primary font-semibold"
               >
                 First Name
@@ -27,14 +75,16 @@ const SignUp = () => {
               <input
                 type="text"
                 id="first-name"
-                name="first-name"
+                name="firstName"
                 placeholder="Programmer"
+                value={formData.firstName}
+                onChange={handleChange}
                 className="border outline-none rounded-md p-2 mt-1"
               />
             </div>
             <div className="flex flex-col w-full">
               <label
-                htmlFor="email"
+                htmlFor="lastName"
                 className="text-sm text-black-primary font-semibold"
               >
                 Last Name
@@ -42,8 +92,10 @@ const SignUp = () => {
               <input
                 type="text"
                 id="last-name"
-                name="last-name"
+                name="lastName"
                 placeholder="Jaf"
+                value={formData.lastName}
+                onChange={handleChange}
                 className="border outline-none rounded-md p-2 mt-1"
               />
             </div>
@@ -62,16 +114,19 @@ const SignUp = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="border outline-none rounded-md p-2 mt-1"
                 placeholder="jaf@gmail.com"
+                value={formData.email}
+                onChange={handleChange}
+                className="border outline-none rounded-md p-2 mt-1"
               />
             </div>
           </div>
+
           {/* password */}
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="flex flex-col w-full">
               <label
-                htmlFor="email"
+                htmlFor="password"
                 className="text-sm text-black-primary font-semibold"
               >
                 Password
@@ -80,16 +135,19 @@ const SignUp = () => {
                 type="password"
                 id="password"
                 name="password"
-                className="border outline-none rounded-md p-2 mt-1"
                 placeholder="******"
+                value={formData.password}
+                onChange={handleChange}
+                className="border outline-none rounded-md p-2 mt-1"
               />
             </div>
           </div>
+
           {/* confirm password */}
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="flex flex-col w-full">
               <label
-                htmlFor="email"
+                htmlFor="confirmPassword"
                 className="text-sm text-black-primary font-semibold"
               >
                 Confirm Password
@@ -97,13 +155,14 @@ const SignUp = () => {
               <input
                 type="password"
                 id="confirm-password"
-                name="confirm-password"
-                className="border outline-none rounded-md p-2 mt-1"
+                name="confirmPassword"
                 placeholder="******"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                className="border outline-none rounded-md p-2 mt-1"
               />
             </div>
           </div>
-          {/* select role  */}
 
           {/* select role */}
           <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -117,8 +176,9 @@ const SignUp = () => {
               <select
                 id="role"
                 name="role"
+                value={formData.role}
+                onChange={handleChange}
                 className="border outline-none rounded-md p-2 mt-1"
-                defaultValue=""
               >
                 <option value="" disabled>
                   Select your role
@@ -133,26 +193,29 @@ const SignUp = () => {
           <div className="flex flex-col md:flex-row gap-4 mt-4">
             <div className="flex flex-col w-full">
               <CustomButton
+                type="submit"
                 style="bg-orange-primary text-white rounded-md p-2 mt-1 hover:bg-orange-500 transition duration-200"
-                title={"sign up"}
+                title={isSubmitting ? "Signing up..." : "Sign Up"}
               />
             </div>
           </div>
-          {/* terms and condition */}
+
+          {/* terms */}
           <div className="my-5">
-            <p className="text-p3 text-grey-primary ">
+            <p className="text-p3 text-grey-primary">
               By clicking “Sign up” you’re agreeing to our{" "}
               <Link to={""} className="hover:underline">
                 Terms & Conditions.
               </Link>
             </p>
           </div>
+
           {/* already have an account */}
           <div className="my-5 text-center mx-auto">
-            <p className="text-p3 text-grey-primary ">
+            <p className="text-p3 text-grey-primary">
               Already have an account?{" "}
               <Link
-                to={"/sign-in"}
+                to="/sign-in"
                 className="text-orange-primary hover:underline"
               >
                 Log in
